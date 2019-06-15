@@ -61,3 +61,5 @@ function chk_bin() {
 
 
 readonly WGET=$( chk_bin "wget" )
+[[ -z $WGET ]] &&
+    _err "Please install 'wget'."
